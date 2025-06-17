@@ -1,6 +1,6 @@
-# Welcome to React Router!
+# Event_Flow
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, eventbrite-like event booking and networking web app.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
@@ -23,6 +23,10 @@ Install the dependencies:
 ```bash
 npm install
 ```
+
+### Node.js version
+
+We use node 20+ (20.19.2), set up your local or gloabl node version to 20+ using nvm: `https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating`.
 
 ### Development
 
