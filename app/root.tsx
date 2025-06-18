@@ -1,11 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   isRouteErrorResponse,
-  Links,
-  Meta,
   Outlet,
 } from "react-router";
 
 import type { Route } from "./+types/root";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -20,10 +21,6 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
 ];
-
-export default function App() {
-  return <Outlet />;
-}
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
@@ -52,4 +49,8 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       )}
     </main>
   );
+}
+
+export default function App() {
+  return <Outlet />;
 }

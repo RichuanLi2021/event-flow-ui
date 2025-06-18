@@ -6,7 +6,7 @@ export default [
     index("./pages/Home.tsx"),
     //other routes share the global layout
 
-    layout("./components/layouts/Dashboard.tsx", [
+    layout("./components/dashboard/Dashboard.tsx", [
         route("account", "./pages/Account.tsx"),
         // route("eventmanagement", "./pages/EventManagement.tsx"),
         // other routes share the Dashboard shell

@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface MyComponentProps {
-  
-}
-
-function MyComponent(props: MyComponentProps) {
+function MyComponent() {
   return (
     <div>
       {/* Component content goes here */}

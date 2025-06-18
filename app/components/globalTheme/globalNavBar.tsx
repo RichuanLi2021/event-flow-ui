@@ -1,19 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FaSearch } from 'react-icons/fa';
 
-interface MyComponentProps {
-  
-}
+interface MyComponentProps {}
 
 export default function GlobalNavigationBar(props: MyComponentProps) {
   return (
-     <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Event Flow</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -37,15 +35,17 @@ export default function GlobalNavigationBar(props: MyComponentProps) {
               Link
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <div className="navbar-searchbar-center">
+            <div className="searchbar-wrapper">
+              <FaSearch className="searchbar-icon" />
+              <input
+                type="text"
+                className="searchbar-input"
+                placeholder="Search events"
+                aria-label="Search events"
+              />
+            </div>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

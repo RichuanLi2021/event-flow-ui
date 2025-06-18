@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface MyComponentProps {
-  
-}
-
-export default function DashboardShell(props: MyComponentProps) {
+export default function DashboardShell() {
   return (
     <div>
       {/* Component content goes here */}

@@ -2,18 +2,6 @@
 
 A modern, eventbrite-like event booking and networking web app.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
 ## Getting Started
 
 ### Installation
@@ -26,7 +14,8 @@ npm install
 
 ### Node.js version
 
-We use node 20+ (20.19.2), set up your local or gloabl node version to 20+ using nvm: `https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating`.
+We use node 20+ (20.19.2), set up your local or gloabl node version to 20+ using nvm: 
+`https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating`.
 
 ### Development
 
@@ -37,6 +26,24 @@ npm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
+
+### Project Structure
+
+The routing strategy used in this project is react-router Framework mode:
+`https://reactrouter.com/start/framework/routing`
+
+```
+├── app/
+|   ├── components/    # All page related components
+|   ├── pages/         # All app page
+|   ├── types/         # All const types go here
+|   ├── redux/         # Global state management
+│   └── utils/         # helper functions can be saved here
+|   ... other folders
+
+├── root.tsx           # The entry point of the whole app.
+├── rootes.ts          # The route map for all pages, including layout and pages.
+```
 
 ## Building for Production
 
@@ -67,20 +74,6 @@ The containerized application can be deployed to any platform that supports Dock
 - Digital Ocean App Platform
 - Fly.io
 - Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
 
 ## Styling
 

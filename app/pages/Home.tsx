@@ -1,5 +1,6 @@
 import type { Route } from "./+types/Home";
-import HomeBody from "~/components/home/homeBody";
+import GlobalShell from "../components/globalTheme/globalShell";
+import HomeBody from "../components/home/homeBody";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,8 +11,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <>
-      <HomeBody/>
-    </>
-  )
+
+      <HomeBody />
+
+  );
 }
